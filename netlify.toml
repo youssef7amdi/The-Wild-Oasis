@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "/api/*"
+  to = "http://34.245.88.242/api/insurer/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
