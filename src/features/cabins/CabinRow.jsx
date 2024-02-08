@@ -39,8 +39,8 @@ const Discount = styled.div`
 `;
 
 function CabinRow({ cabin }) {
-  const { isDeleting, deleteCabin } = useDeleteCabin();
-  const { isCreating, createCabin } = useCreateCabin();
+  const { deletingStatus, deleteCabin } = useDeleteCabin();
+  const { createCabin } = useCreateCabin();
 
   const {
     id: cabinId,
@@ -101,7 +101,7 @@ function CabinRow({ cabin }) {
           <Modal.Window name="delete">
             <ConfirmDelete
               resourceName="cabins"
-              disabled={isDeleting}
+              disabled={deletingStatus === "pending"}
               onConfirm={() => deleteCabin(cabinId)}
             />
           </Modal.Window>

@@ -17,7 +17,7 @@ function UpdateSettingsForm() {
     } = {},
   } = useSettings();
 
-  const { isUpdating, updateSetting } = useUpdateSetting();
+  const { settingsStatus, updateSetting } = useUpdateSetting();
 
   function handleUpdate(e, prevValue, field) {
     const { value } = e.target;
@@ -36,7 +36,7 @@ function UpdateSettingsForm() {
           type="number"
           id="min-nights"
           defaultValue={minBookingLength}
-          disabled={isUpdating}
+          disabled={settingsStatus === "pending"}
           onBlur={(e) => handleUpdate(e, minBookingLength, "minBookingLength")}
         />
       </FormRow>
@@ -46,7 +46,7 @@ function UpdateSettingsForm() {
           type="number"
           id="max-nights"
           defaultValue={maxBookingLength}
-          disabled={isUpdating}
+          disabled={settingsStatus === "pending"}
           onBlur={(e) => handleUpdate(e, maxBookingLength, "maxBookingLength")}
         />
       </FormRow>
@@ -56,7 +56,7 @@ function UpdateSettingsForm() {
           type="number"
           id="max-guests"
           defaultValue={maxGuestsPerBooking}
-          disabled={isUpdating}
+          disabled={settingsStatus === "pending"}
           onBlur={(e) =>
             handleUpdate(e, maxGuestsPerBooking, "maxGuestsPerBooking")
           }
@@ -68,7 +68,7 @@ function UpdateSettingsForm() {
           type="number"
           id="breakfast-price"
           defaultValue={breakfastPrice}
-          disabled={isUpdating}
+          disabled={settingsStatus === "pending"}
           onBlur={(e) => handleUpdate(e, breakfastPrice, "breakfastPrice")}
         />
       </FormRow>
