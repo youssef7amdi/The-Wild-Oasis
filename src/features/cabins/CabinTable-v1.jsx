@@ -5,10 +5,10 @@ import Spinner from "../../ui/Spinner";
 import CabinRow from "./CabinRow";
 
 const Table = styled.div`
-  border: 1px solid var(--color-grey-200);
+  border: 1px solid var(--color-gray-200);
 
   font-size: 1.4rem;
-  background-color: var(--color-grey-0);
+  background-color: var(--color-gray-0);
   border-radius: 7px;
   overflow: hidden;
 `;
@@ -19,12 +19,12 @@ const TableHeader = styled.header`
   column-gap: 2.4rem;
   align-items: center;
 
-  background-color: var(--color-grey-50);
-  border-bottom: 1px solid var(--color-grey-100);
+  background-color: var(--color-gray-50);
+  border-bottom: 1px solid var(--color-gray-100);
   text-transform: uppercase;
   letter-spacing: 0.4px;
   font-weight: 600;
-  color: var(--color-grey-600);
+  color: var(--color-gray-600);
   padding: 1.6rem 2.4rem;
 `;
 

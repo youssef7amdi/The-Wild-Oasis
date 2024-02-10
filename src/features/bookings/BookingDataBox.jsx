@@ -14,8 +14,8 @@ import { formatDistanceFromNow, formatCurrency } from "../../utils/helpers";
 
 const StyledBookingDataBox = styled.section`
   /* Box */
-  background-color: var(--color-grey-0);
-  border: 1px solid var(--color-grey-100);
+  background-color: var(--color-gray-0);
+  border: 1px solid var(--color-gray-100);
   border-radius: var(--border-radius-md);
 
   overflow: hidden;
@@ -60,11 +60,11 @@ const Guest = styled.div`
   align-items: center;
   gap: 1.2rem;
   margin-bottom: 1.6rem;
-  color: var(--color-grey-500);
+  color: var(--color-gray-500);
 
   & p:first-of-type {
     font-weight: 500;
-    color: var(--color-grey-700);
+    color: var(--color-gray-700);
   }
 `;
 
@@ -97,7 +97,7 @@ const Price = styled.div`
 const Footer = styled.footer`
   padding: 1.6rem 4rem;
   font-size: 1.2rem;
-  color: var(--color-grey-500);
+  color: var(--color-gray-500);
   text-align: right;
 `;
 

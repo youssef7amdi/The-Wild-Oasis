@@ -23,7 +23,7 @@ import { useDeleteBooking } from "./useDeleteBooking";
 const Cabin = styled.div`
   font-size: 1.6rem;
   font-weight: 600;
-  color: var(--color-grey-600);
+  color: var(--color-gray-600);
   font-family: "Sono";
 `;
 
@@ -37,7 +37,7 @@ const Stacked = styled.div`
   }
 
   & span:last-child {
-    color: var(--color-grey-500);
+    color: var(--color-gray-500);
     font-size: 1.2rem;
   }
 `;

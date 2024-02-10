@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 const StyledStat = styled.div`
   /* Box */
-  background-color: var(--color-grey-0);
-  border: 1px solid var(--color-grey-100);
+  background-color: var(--color-gray-0);
+  border: 1px solid var(--color-gray-100);
   border-radius: var(--border-radius-md);
 
   padding: 1.6rem;
@@ -38,7 +38,7 @@ const Title = styled.h5`
   text-transform: uppercase;
   letter-spacing: 0.4px;
   font-weight: 600;
-  color: var(--color-grey-500);
+  color: var(--color-gray-500);
 `;
 
 const Value = styled.p`

@@ -5,8 +5,8 @@ import Row from "../../ui/Row";
 
 const StyledToday = styled.div`
   /* Box */
-  background-color: var(--color-grey-0);
-  border: 1px solid var(--color-grey-100);
+  background-color: var(--color-gray-0);
+  border: 1px solid var(--color-gray-100);
   border-radius: var(--border-radius-md);
 
   padding: 3.2rem;

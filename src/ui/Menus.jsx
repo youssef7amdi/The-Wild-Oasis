@@ -29,6 +29,14 @@ const StyledToggle = styled.button`
   }
 `;
 
+const FullPageDiv = styled.div`
+  position: fixed;
+  inset: 0;
+  background: transparent;
+  width: 100dvw;
+  height: 100dvh;
+`;
+
 const StyledList = styled.ul`
   position: fixed;
 
@@ -111,9 +119,11 @@ function List({ id, children }) {
   if (openId !== id) return null;
 
   return createPortal(
-    <StyledList position={position} ref={ref}>
-      {children}
-    </StyledList>,
+    <FullPageDiv>
+      <StyledList position={position} ref={ref}>
+        {children}
+      </StyledList>
+    </FullPageDiv>,
     document.body
   );
 }
