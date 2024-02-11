@@ -119,6 +119,7 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   font-size: 1.6rem;
+  overflow-y: hidden;
 }
 
 input,
