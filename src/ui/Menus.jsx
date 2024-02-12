@@ -30,14 +30,6 @@ const StyledToggle = styled.button`
   }
 `;
 
-const FullPageDiv = styled.div`
-  position: fixed;
-  inset: 0;
-  background: transparent;
-  width: 100dvw;
-  height: 100dvh;
-`;
-
 const StyledList = styled.ul`
   position: fixed;
 
