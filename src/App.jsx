@@ -14,7 +14,7 @@ import Users from "./pages/Users";
 import Settings from "./pages/Settings";
 import Account from "./pages/Account";
 import Login from "./pages/Login";
-// import PageNotFound from "./pages/PageNotFound";
+import PageNotFound from "./pages/PageNotFound";
 
 import AppLayout from "./ui/AppLayout";
 import ProtectedRoute from "./ui/ProtectedRoute";
@@ -56,7 +56,7 @@ function App() {
             </Route>
 
             <Route path="login" element={<Login />} />
-            {/* <Route path="*" element={<PageNotFound />} /> */}
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
         </BrowserRouter>
 
